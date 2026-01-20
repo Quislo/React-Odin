@@ -1,16 +1,26 @@
 
 function List(props) {
-  return (
-    <ul>
-      {props.animais.map((animal) => {
-        return animal.startsWith("L") ? <li key={animal}>{animal} </li> : null;
-      })}
-    </ul>
+  return(
+    <> 
+    {
+    !props.animais ? (
+      <div>Loading...</div>
+    ): props.animais.length > 0 ? (
+      <ul>
+        {props.animais.map((animal) => (
+          <li key ={animal} > {animal}</li>
+        ))}
+      </ul>
+    ) : (
+      <div>No animals found in the list!</div>
+    )
+}   
+    </>
   );
 }
 
 function App() {
-  const animais = ["Lion", "Cow", "Snake", "Lizard"];
+  const animais = [];
 
   return (
     <div>

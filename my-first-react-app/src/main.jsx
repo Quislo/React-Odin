@@ -3,9 +3,12 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Greeting from './Greeting.jsx'
+import Packed from './Packed.jsx'
+import TodoList from './Chaves.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App/>
+    <TodoList
+    />
   </StrictMode>,
 )
