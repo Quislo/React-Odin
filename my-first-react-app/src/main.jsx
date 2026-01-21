@@ -8,7 +8,6 @@ import TodoList from './Chaves.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <TodoList
-    />
+    <App/>
   </StrictMode>,
 )
