@@ -5,9 +5,12 @@ import App from './App.jsx'
 import Greeting from './Greeting.jsx'
 import Packed from './Packed.jsx'
 import TodoList from './Chaves.jsx'
+import Estados from './Estados.jsx'
+import React from "react";
+
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App/>
-  </StrictMode>,
+  <React.StrictMode>
+    <Estados/>
+  </React.StrictMode>,
 )

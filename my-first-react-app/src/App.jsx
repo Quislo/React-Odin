@@ -1,3 +1,7 @@
+import "./App.css";
+
+const COLORS = ["pink", "green", "blue", "yellow", "purple"];
+
 
 function List(props) {
   return(
@@ -36,6 +40,8 @@ function App() {
     window.location.href = url; 
   }
 
+  
+
   return (
     <div>
       <h1>Animals: </h1>
@@ -44,7 +50,6 @@ function App() {
         <Button handleClick = {() => handleButtonClick('https://www.google.com')}/>
         <Button text="Dont't click me!" color="blue" fontSize={16}/>
         <Button handleClick={() => handleButtonClick('https://www.theodinproject.com')} fontSize={20}/>
-    
     </div>
   );
 }
