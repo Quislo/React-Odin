@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import "./App.css";
 
 const COLORS = ["pink", "green", "blue", "yellow", "purple"];
+
 
 function Estados() {
   const [backgroundColor, setBackgroundColor] = useState(COLORS[0]);
@@ -31,4 +32,6 @@ function Estados() {
   );
 }
 
-export default Estados;
+
+
+export default Estados ;
