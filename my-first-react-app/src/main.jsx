@@ -7,10 +7,11 @@ import Packed from './Packed.jsx'
 import TodoList from './Chaves.jsx'
 import Estados from './Estados.jsx'
 import React from "react";
+import InformacoesGerais from  './InformacoesGerais.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Estados/>
+    <General/>
   </React.StrictMode>,
 )
